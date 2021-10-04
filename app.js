@@ -35,16 +35,26 @@ const showTeamData = (teamData) => {
         }
     }   
 
-let selection = document.querySelector('select');
-let result = document.querySelector('.matchup');
+// let selection = document.querySelector('select');
+// let result = document.querySelector('.matchup');
 
-selection.addEventListener('change',() => {
-    result.innerText = selection.options[selection.selectedIndex].text;
-    const result1= document.createElement('h2');
-    document.querySelector('.matchup').appendChild(result1)
+// selection.addEventListener('change',() => {
+//     result.innerText = selection.options[selection.selectedIndex].text;
+//     const result1= document.createElement('h2');
+//     document.querySelector('#matchup').appendChild(result1)
+    
+// })
+
+const newTeam = () => {
     
 
-})
+    let userSelect = document.getElementsByClassName('team-data').value;
+    document.getElementById('matchup').innerHTML =" you have chosen " + userSelect;
+    
+
+}
+
+
 
 
 
