@@ -31,7 +31,7 @@ const showTeamData = (teamData) => {
 
         const logo = document.createElement('img')
         logo.src=teamData.data[i].logo
-        document.querySelector('#select').append(logo)  
+        document.querySelector('.new').append(logo)  
         
         
     }  
@@ -46,9 +46,12 @@ const newTeam = (team) => {
     // const newTeam = matchTeams.push(userSelect);
     
     console.log(matchTeams);
-    const newTeam = matchTeams.push(userSelect);
+    matchTeams.push(userSelect);
     document.querySelector('.games').append(matchTeams);
+    matchTeams = [];
 }
+
+
 
 
 

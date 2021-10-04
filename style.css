@@ -8,8 +8,22 @@ div {
     justify-content: center;
 }
 
-.form {
-    display: flex;
+/* .form {
+    display: flex-end;
     justify-self: center;
-}
+} */
+.games{
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 10px;
 
+}
+body{
+    background-color: rosybrown;
+}
+.search-section{
+    flex-wrap: wrap;
+    flex-direction:column;
+    align-content: center;
+    padding-bottom: 50px;
+}
