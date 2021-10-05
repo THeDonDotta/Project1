@@ -54,6 +54,13 @@ const newTeam = (team) => {
     document.getElementById('teams').innerHTML = teamOne+ " vs " + teamTwo;
 }
 
+const homeTeam = document.querySelector('.home');
+let homeWin = 0;
+homeTeam.addEventListener('click', () => {
+    homeWin = homeWin + 1;
+    
+})
+
 
 
 
