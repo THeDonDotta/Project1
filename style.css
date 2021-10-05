@@ -30,5 +30,14 @@ body{
 
 #teams {
     font-size: 40px;
-   align-self: center;
+    padding-left:30%;
+}
+
+#choice {
+    font-size:35px;
+    padding-left:35%;
+}
+#userChoice {
+    /* padding-left: 5%; */
+    justify-content: space-around;
 }
