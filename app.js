@@ -47,9 +47,17 @@ const newTeam = (team) => {
     
     console.log(matchTeams);
     matchTeams.push(userSelect);
-    document.querySelector('.games').append(matchTeams);
-    matchTeams = [];
+    //document.querySelector('.games').append(matchTeams);
+    // matchTeams = [];
+    let teamOne = matchTeams[0];
+    let teamTwo = matchTeams[1];
+    document.getElementById('teams').innerHTML = teamOne+ " vs " + teamTwo;
 }
+
+
+
+
+
 
 
 
