@@ -24,9 +24,15 @@ body{
     width : 100%;
 
 }
-.img1{
+#img1{
     justify-content:center;
+    padding-left: 30%;
+
     
+}
+#txt{
+    justify-content: center;
+    color: white;
 }
 .start{
     flex-wrap: wrap;
@@ -34,6 +40,7 @@ body{
     align-content: center;
     padding-bottom: 50px;
     justify-content: center;
+    color: white;
 }  
 
 #teams {
