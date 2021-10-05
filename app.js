@@ -12,6 +12,7 @@ fetch("https://app.sportdataapi.com/api/v1/soccer/teams?apikey=a8db2bb0-22c5-11e
         console.log(resJSON);
 
         showTeamData(resJSON);
+        // teamImg(resJSON)
 
         })
         .catch((error) => {
@@ -29,11 +30,9 @@ const showTeamData = (teamData) => {
         nameTeam.innerText= teamData.data[i].name;
         document.querySelector('#select').appendChild(nameTeam)
 
-        const logo = document.createElement('img')
-        logo.src=teamData.data[i].logo
-        document.querySelector('.new').append(logo)  
-        
-        
+        // const logo = document.createElement('img')
+        // logo.src=teamData.data[i].logo
+        // document.querySelector('.new').append(logo)    
     }  
     }   
 let matchTeams = [];
@@ -56,12 +55,21 @@ const newTeam = (team) => {
     return teamOne, teamTwo;
 }
 
+// const teamImg = (images) => {
+//     const logo = document.createElement('img')
+//     logo.src=teamData.data[images].logo
+//     document.querySelector('#teams').append(logo) 
+//     return images;
+// }
+
+
 const homeTeam = document.querySelector('.home');
 let homeWin = 0;
 homeTeam.addEventListener('click', () => {
     homeWin = homeWin + 1;
     
 })
+
 const awayTeam = document.querySelector('.away');
 let awayWin = 0;
 awayTeam.addEventListener('click', () => {
@@ -69,7 +77,7 @@ awayTeam.addEventListener('click', () => {
     
 })
 
-document.getElementById('result').innerHTML = 'They won!!'
+document.getElementById('result').innerHTML = `The home team has ${homeWin} votes and the away team has ${awayWin} votes`;
 
 
 
