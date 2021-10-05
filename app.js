@@ -69,7 +69,7 @@ awayTeam.addEventListener('click', () => {
     
 })
 
-document.getElementById('result').innerHTML = teamOne+ " has " + homeWin + ' and ' + teamTwo + 'has ' + awayWin;
+document.getElementById('result').innerHTML = 'They won!!'
 
 
 
