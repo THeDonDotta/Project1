@@ -38,7 +38,8 @@ const showTeamData = (teamData) => {
     }   
 let matchTeams = [];
 
-
+let teamOne ='';
+let teamTwo = '';
 const newTeam = (team) => {
 
     let userSelect = document.getElementById('select').value;
@@ -49,9 +50,10 @@ const newTeam = (team) => {
     matchTeams.push(userSelect);
     //document.querySelector('.games').append(matchTeams);
     // matchTeams = [];
-    let teamOne = matchTeams[0];
-    let teamTwo = matchTeams[1];
+    teamOne = matchTeams[0];
+    teamTwo = matchTeams[1];
     document.getElementById('teams').innerHTML = teamOne+ " vs " + teamTwo;
+    return teamOne, teamTwo;
 }
 
 const homeTeam = document.querySelector('.home');
@@ -60,6 +62,18 @@ homeTeam.addEventListener('click', () => {
     homeWin = homeWin + 1;
     
 })
+const awayTeam = document.querySelector('.away');
+let awayWin = 0;
+awayTeam.addEventListener('click', () => {
+    awayWin = awayWin + 1;
+    
+})
+
+document.getElementById('result').innerHTML = teamOne+ " has " + homeWin + ' and ' + teamTwo + 'has ' + awayWin;
+
+
+
+
 
 
 
