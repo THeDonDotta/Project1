@@ -2,7 +2,9 @@ const DOMAIN = 'http://app.sportsdataappi.com/';
 const API_KEY = '5233420936673633'
 
 
-    
+
+
+
 fetch("https://app.sportdataapi.com/api/v1/soccer/teams?apikey=a8db2bb0-22c5-11ec-9524-773a9f576272&country_id=42"
 )
     .then((res) => {
@@ -19,7 +21,7 @@ fetch("https://app.sportdataapi.com/api/v1/soccer/teams?apikey=a8db2bb0-22c5-11e
             console.log(`ERROR: ${error}`);
         });
 
-let teamImg = [];
+
 
 const showTeamData = (teamData) => {
 
@@ -31,7 +33,7 @@ const showTeamData = (teamData) => {
 
         const logo = document.createElement('img')
         logo.src=teamData.data[i].logo
-        let logoImgs= logo;
+        // let logoImgs= logo;
             // console.log(logoImgs)
         // document.querySelector('.imgTeams').append(logo) 
 
