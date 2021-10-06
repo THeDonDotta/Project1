@@ -11,7 +11,8 @@ fetch("https://app.sportdataapi.com/api/v1/soccer/teams?apikey=a8db2bb0-22c5-11e
     .then((resJSON) => {
         console.log(resJSON);
         showTeamData(resJSON);
-        somethingNew(resJSON);
+        const teamList = resJSON;
+        return teamList;
 
         })
         .catch((error) => {
@@ -30,21 +31,20 @@ const showTeamData = (teamData) => {
 
         const logo = document.createElement('img')
         logo.src=teamData.data[i].logo
-        // let finalTeam =logo;
-        // document.querySelector('.imgTeams').append(logo) 
+
     }  
     }  
 
 
-const somethingNew =(logos) => {
-    for(let i=0; i<292; i++) {
-    // const logo = document.createElement('img')
-    let logo=[];
-    logo.src=logos.data[i].logo
+// const somethingNew =(logos) => {
+//     for(let i=0; i<292; i++) {
+//     // const logo = document.createElement('img')
+//     let logo=[];
+//     logo.src=logos.data[i].logo
         
         
-} 
-}      
+// } 
+// }      
 
 
 let matchTeams = [];
@@ -56,21 +56,24 @@ const newTeam = (team) => {
 
     let userSelect = document.getElementById('select').value;
     document.getElementById('matchup').innerHTML =" you have chosen " + userSelect;  
-    // const newTeam = matchTeams.push(userSelect);
     
+
     
     console.log(matchTeams);
     matchTeams.push(userSelect);
-    //document.querySelector('.games').append(matchTeams);
-    // matchTeams = [];
+
     teamOne = matchTeams[0];
     teamTwo = matchTeams[1];
     document.getElementById('teams').innerHTML = teamOne+ " vs " + teamTwo;
-    return teamOne, teamTwo;
 
+    const logo = document.createElement('img')
+    document.querySelector('#teamImg')
+    const choice =find((teamOne) => teamList) 
+    console.log(choice) 
+    
 
 }
-const teammy;
+
 const awayWinner = () => {
     document.getElementById('result').innerHTML='You chose the away team to win';
 }
