@@ -70,7 +70,7 @@ const newTeam = (team) => {
 
 
 }
-
+const teammy;
 const awayWinner = () => {
     document.getElementById('result').innerHTML='You chose the away team to win';
 }
