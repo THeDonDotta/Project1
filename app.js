@@ -12,7 +12,7 @@ fetch("https://app.sportdataapi.com/api/v1/soccer/teams?apikey=a8db2bb0-22c5-11e
         console.log(resJSON);
 
         showTeamData(resJSON);
-        // teamImg(resJSON)
+
 
         })
         .catch((error) => {
@@ -25,14 +25,15 @@ const showTeamData = (teamData) => {
 
         for(let i= 0; i < 292; i++) {
 
-            console.log(teamData[i]);
         const nameTeam = document.createElement('option')
         nameTeam.innerText= teamData.data[i].name;
         document.querySelector('#select').appendChild(nameTeam)
 
         const logo = document.createElement('img')
         logo.src=teamData.data[i].logo
-        document.querySelector('.new').append(logo) 
+        let logoImgs= logo;
+            // console.log(logoImgs)
+        // document.querySelector('.imgTeams').append(logo) 
 
     }  
     }   
@@ -60,6 +61,39 @@ const newTeam = (team) => {
     return teamOne, teamTwo;
 }
 
+const awayWinner = () => {
+    document.getElementById('result').innerHTML='You chose the away team to win';
+
+}
+
+const homeWinner = () => {
+    
+    document.getElementById('result').innerHTML = 'you chose the home team to win';
+}
+
+
+// const imgTeams = (imgData) => {
+//     if(teamOne === data[imgData].logo) {
+//     for(let i= 0; i < 292; i++) {
+
+//     const logo = document.createElement('img')
+//     logo.src=imgData.data[i].logo
+
+//     document.querySelector('.imgTeams').append(logo) 
+//     }
+// }  
+// } 
+
+
+
+
+
+
+
+
+
+
+
 // const teamImg = (images) => {
 //     const logo = document.createElement('img')
 //     logo.src=teamData.data[images].logo
@@ -74,27 +108,6 @@ const newTeam = (team) => {
 //     homeWin = homeWin + 1;
     
 // })
-
-
-const awayWinner = () => {
-    document.getElementById('result').innerHTML='You chose the away team to win';
-}
-
-
-
-
-const homeWinner = () => {
-    
-    document.getElementById('result').innerHTML = 'you chose the home team to win';
-}
-
-// document.getElementById('result').innerHTML = homeWin;
-
-const jb =() => {
-    
-}
-
-
 
 
 
