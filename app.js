@@ -11,7 +11,7 @@ fetch("https://app.sportdataapi.com/api/v1/soccer/teams?apikey=a8db2bb0-22c5-11e
     .then((resJSON) => {
         console.log(resJSON);
         showTeamData(resJSON);
-        // somethingNew(resJSON);
+        somethingNew(resJSON);
 
         })
         .catch((error) => {
@@ -30,7 +30,7 @@ const showTeamData = (teamData) => {
 
         const logo = document.createElement('img')
         logo.src=teamData.data[i].logo
-        let finalTeam =logo;
+        // let finalTeam =logo;
         // document.querySelector('.imgTeams').append(logo) 
     }  
     }  
@@ -40,20 +40,18 @@ const somethingNew =(logos) => {
     for(let i=0; i<292; i++) {
     // const logo = document.createElement('img')
     let logo=[];
-    logo.src=logos.data[i]
-        finalTeam.push(logo);
-        // document.querySelector('.imgTeams').append(logo) 
+    logo.src=logos.data[i].logo
+        
+        
 } 
 }      
-// console.log(finalTeam);
+
 
 let matchTeams = [];
 
 let teamOne ='';
 let teamTwo = '';
-// let teamsImages =[];
-// let oneImage ;
-// let twoImage ;
+
 const newTeam = (team) => {
 
     let userSelect = document.getElementById('select').value;
@@ -69,6 +67,8 @@ const newTeam = (team) => {
     teamTwo = matchTeams[1];
     document.getElementById('teams').innerHTML = teamOne+ " vs " + teamTwo;
     return teamOne, teamTwo;
+
+
 }
 
 const awayWinner = () => {
