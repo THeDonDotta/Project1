@@ -6,6 +6,7 @@ h1 {
     display: flex;
     justify-content: center;
     flex: cover;
+    color:aliceblue;
 }
 
 div {
@@ -20,7 +21,7 @@ div {
 
 }
 body{
-    background-image: linear-gradient(white, tan);
+    background-image: linear-gradient(rgb(175, 72, 72), tan);
     height : 100%;
     width : 100%;
 
