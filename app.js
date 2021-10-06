@@ -90,7 +90,9 @@ const homeWinner = () => {
 
 // document.getElementById('result').innerHTML = homeWin;
 
-
+const jb =() => {
+    
+}
 
 
 
