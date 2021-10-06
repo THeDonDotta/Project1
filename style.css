@@ -105,8 +105,16 @@ h2{
     padding-top: 30px;
     padding-bottom:30px;
     margin: auto;
-    @media screen and (max-width:480px){
-        flex-direction: column;
+    /* @media screen and (max-width:480px){
+        display: none; */    
     }
 
+@media (max-width:480px) {
+    #imgContainer{
+        display: none;
+    }
+    #txt{
+        display: none;
+    }
 }
+
