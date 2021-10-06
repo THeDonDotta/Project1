@@ -3,8 +3,6 @@ const API_KEY = '5233420936673633'
 
 
 
-
-
 fetch("https://app.sportdataapi.com/api/v1/soccer/teams?apikey=a8db2bb0-22c5-11ec-9524-773a9f576272&country_id=42"
 )
     .then((res) => {
@@ -12,9 +10,8 @@ fetch("https://app.sportdataapi.com/api/v1/soccer/teams?apikey=a8db2bb0-22c5-11e
     })
     .then((resJSON) => {
         console.log(resJSON);
-
         showTeamData(resJSON);
-
+        // somethingNew(resJSON);
 
         })
         .catch((error) => {
@@ -33,12 +30,23 @@ const showTeamData = (teamData) => {
 
         const logo = document.createElement('img')
         logo.src=teamData.data[i].logo
-        // let logoImgs= logo;
-            // console.log(logoImgs)
+        let finalTeam =logo;
         // document.querySelector('.imgTeams').append(logo) 
-
     }  
-    }   
+    }  
+
+
+const somethingNew =(logos) => {
+    for(let i=0; i<292; i++) {
+    // const logo = document.createElement('img')
+    let logo=[];
+    logo.src=logos.data[i]
+        finalTeam.push(logo);
+        // document.querySelector('.imgTeams').append(logo) 
+} 
+}      
+// console.log(finalTeam);
+
 let matchTeams = [];
 
 let teamOne ='';
@@ -65,11 +73,9 @@ const newTeam = (team) => {
 
 const awayWinner = () => {
     document.getElementById('result').innerHTML='You chose the away team to win';
-
 }
 
-const homeWinner = () => {
-    
+const homeWinner = () => {    
     document.getElementById('result').innerHTML = 'you chose the home team to win';
 }
 
