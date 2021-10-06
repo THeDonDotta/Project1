@@ -80,3 +80,23 @@ h2{
 .form {
     padding-left: 30%;
 }
+#result{
+    padding-top: 30px;
+    font-size : 40px;
+
+}
+
+.images{
+    width: cover;
+    height: 200px;
+    flex-basis: 50%;
+    flex-direction: row;
+    align-content: center;
+    padding-top: 30px;
+    padding-bottom:30px;
+    
+
+    
+
+
+}
