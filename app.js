@@ -68,21 +68,27 @@ const newTeam = (team) => {
 // }
 
 
-const homeTeam = document.querySelector('.home');
-let homeWin = 0;
-homeTeam.addEventListener('click', () => {
-    homeWin = homeWin + 1;
+// const homeTeam = document.querySelector('.home');
+// let homeWin ;
+// homeTeam.addEventListener('click', () => {
+//     homeWin = homeWin + 1;
     
-})
+// })
 
-const awayTeam = document.querySelector('.away');
-let awayWin = 0;
-awayTeam.addEventListener('click', () => {
-    awayWin = awayWin + 1;
+
+const awayWinner = () => {
+    document.getElementById('result').innerHTML='You chose the away team to win';
+}
+
+
+
+
+const homeWinner = () => {
     
-})
+    document.getElementById('result').innerHTML = 'you chose the home team to win';
+}
 
-document.getElementById('result').innerHTML = `The home team has ${homeWin} votes and the away team has ${awayWin} votes`;
+// document.getElementById('result').innerHTML = homeWin;
 
 
 
