@@ -5,6 +5,7 @@
 h1 {
     display: flex;
     justify-content: center;
+    flex: cover;
 }
 
 div {
@@ -116,5 +117,19 @@ h2{
     #txt{
         display: none;
     }
-}
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    h1{
+        font-size:14px;
+        text-align:center;
+    }
+    h2{
+        font-size: 14px;
+    }
+    .choice{
+        font-size: 14px;
+    }
 
+}
