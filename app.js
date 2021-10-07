@@ -42,7 +42,7 @@ let teamTwo = '';
 const newTeam = (team) => {
 
     let userSelect = document.getElementById('select').value;
-    document.getElementById('matchup').innerHTML =" you have chosen " + userSelect;  
+    // document.getElementById('matchup').innerHTML =" you have chosen " + userSelect;  
     
 
     
