@@ -67,9 +67,14 @@ const newTeam = (team) => {
     document.getElementById('teams').innerHTML = teamOne+ " vs " + teamTwo;
 
     const logo = document.createElement('img')
-    document.querySelector('#teamImg')
+    
     const choice = teamList.find(item => teamOne === item.name) 
-    console.log(choice.logo) 
+    console.log(choice)
+    logo.src=choice.logo;
+    // logo.src=choice;
+    document.querySelector('#teamImg').appendChild(logo)
+
+    
     
 
 }
