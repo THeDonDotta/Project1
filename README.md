@@ -19,15 +19,15 @@ https://whimsical.com/project1-9jmv2Ao3uZts6P5MbqnVaq
 -add media queries to help make design more responsive for mobile app
 
 ## Timeframes
--Pseudocode: estimated-3%  actual-3%
--HTML and js: estimated-20%  actual-15%
--adding buttons/event listeners: estimated-15% actual-10%
--add/text: estimated-7%  actual-7%
--flexbox: estimated-15%  actual-12%
--styling css: estimated-20% actual-13%
--pulling correct data from api: estimated-15%  actual-35%
--styling media queries: estimated-5% actual-5%
--total 100%
+Pseudocode: estimated-3%  actual-3%
+HTML and js: estimated-20%  actual-15%
+adding buttons/event listeners: estimated-15% actual-10%
+add/text: estimated-7%  actual-7%
+flexbox: estimated-15%  actual-12%
+styling css: estimated-20% actual-13%
+pulling correct data from api: estimated-15%  actual-35%
+styling media queries: estimated-5% actual-5%
+total 100%
 
 ## Code Snippet
 The most time I spent was on the array of teams that would be up against each other which is the first code below. The next problem that took up time was getting the api information accessable to get the image. The code in number 2 allowed me to do that. 
