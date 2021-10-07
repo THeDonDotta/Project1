@@ -60,7 +60,7 @@ const newTeam = (team) => {
     logo.src=choice.logo;
     
     document.querySelector('#teamImg').appendChild(logo)
-}
+}   
     
     const logo2 = document.createElement('img')
     
@@ -71,8 +71,6 @@ const newTeam = (team) => {
     document.querySelector('#teamImg').appendChild(logo2)
 
 
-    
-
 }
 
 const awayWinner = () => {
@@ -81,6 +79,9 @@ const awayWinner = () => {
 
 const homeWinner = () => {    
     document.getElementById('result').innerHTML = 'you chose the home team to win';
+}
+const clear =()=> {
+    location.reload();
 }
 
 
