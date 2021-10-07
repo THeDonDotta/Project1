@@ -12,11 +12,11 @@ http://app.sportsdataappi.com/
 https://whimsical.com/project1-9jmv2Ao3uZts6P5MbqnVaq
             
 ## MVP
--Find and integrate soccer team api 
--Render team api data to the page inside of my dropdown
--Layout my information using html and js
--Style the page with flexbox tools and css
--add media queries to help make design more responsive for mobile app
+- Find and integrate soccer team api 
+- Render team api data to the page inside of my dropdown
+- Layout my information using html and js
+- Style the page with flexbox tools and css
+- add media queries to help make design more responsive for mobile app
 
 ## Timeframes
 | component | Estimated duration | actual duration |
@@ -33,7 +33,7 @@ total 100%
 
 ## Code Snippet
 The most time I spent was on the array of teams that would be up against each other which is the first code below. The next problem that took up time was getting the api information accessable to get the image. The code in number 2 allowed me to do that. 
--1.
+- 1.
 ```
 const newTeam = (team) => {
 
@@ -53,7 +53,7 @@ const newTeam = (team) => {
 }
 ```
 
--2.part1
+- 2.part1
 ```
     .then((resJSON) => {
         console.log(resJSON);
@@ -64,7 +64,7 @@ const newTeam = (team) => {
         })
 ```
 
--2.part2
+- 2.part2
 ```
 if(matchTeams.length ===1){
     const logo = document.createElement('img')
@@ -88,5 +88,5 @@ if(matchTeams.length ===1){
 
 
 
-Change Log
+## Change Log
 I ended up changing a lot. I planned on having the team images show up when selected and also wanted to make a tournament out of the teams selected. I had trouble pulling out the image of the selection made which changed how I wanted to the tournament. Also before that I planned on having the user to build out a starting 11 of players, but I could not get an api that would allow me to have the data to do that. 
