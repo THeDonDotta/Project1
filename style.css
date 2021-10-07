@@ -106,10 +106,13 @@ h2{
     align-content: center;
     padding-top: 30px;
     padding-bottom:30px;
-    margin: auto;
-    /* @media screen and (max-width:480px){
-        display: none; */    
+    margin: auto;   
     }
+
+    #teamImg{
+        justify-content: space-around;
+    }
+
 
 @media (max-width:500px) {
     #imgContainer{
@@ -132,5 +135,7 @@ h2{
     .choice{
         font-size: 14px;
     }
-
+    #teamImg {
+        display: none;
+    }
 }
