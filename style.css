@@ -62,13 +62,19 @@ h2{
     margin: auto;
     
 }
-
+.games{
+    text-align: center;
+    margin: auto;
+    justify-content: space-around;
+}
 #teams {
     font-size: 40px;
     align-content: center;
     flex-wrap: wrap;
     justify-content: center;
-    padding-left: 25%;
+    text-align: center;
+
+    
 }
 
 #winContainer{
@@ -90,7 +96,7 @@ h2{
 }
 .form {
     margin: auto;
-    /* padding-left: 42%; */
+    
     text-align: center;
 }
 #result{
