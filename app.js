@@ -52,7 +52,7 @@ const newTeam = (team) => {
     teamOne = matchTeams[0];
     teamTwo = matchTeams[1];
     document.getElementById('teams').innerHTML = teamOne+ " vs " + teamTwo;
-    
+    if(matchTeams.length ===1){
     const logo = document.createElement('img')
 
     const choice = teamList.find(item => teamOne === item.name) 
@@ -60,7 +60,7 @@ const newTeam = (team) => {
     logo.src=choice.logo;
     
     document.querySelector('#teamImg').appendChild(logo)
-    
+}
     
     const logo2 = document.createElement('img')
     
