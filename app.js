@@ -29,22 +29,9 @@ const showTeamData = (teamData) => {
         nameTeam.innerText= teamData.data[i].name;
         document.querySelector('#select').appendChild(nameTeam)
 
-        const logo = document.createElement('img')
-        logo.src=teamData.data[i].logo
 
     }  
-    }  
-
-
-// const somethingNew =(logos) => {
-//     for(let i=0; i<292; i++) {
-//     // const logo = document.createElement('img')
-//     let logo=[];
-//     logo.src=logos.data[i].logo
-        
-        
-// } 
-// }      
+    }        
 
 
 let matchTeams = [];
@@ -65,16 +52,25 @@ const newTeam = (team) => {
     teamOne = matchTeams[0];
     teamTwo = matchTeams[1];
     document.getElementById('teams').innerHTML = teamOne+ " vs " + teamTwo;
-
-    const logo = document.createElement('img')
     
+    const logo = document.createElement('img')
+
     const choice = teamList.find(item => teamOne === item.name) 
     console.log(choice)
     logo.src=choice.logo;
-    // logo.src=choice;
-    document.querySelector('#teamImg').appendChild(logo)
-
     
+    document.querySelector('#teamImg').appendChild(logo)
+    
+    
+    const logo2 = document.createElement('img')
+    
+    const choice2 = teamList.find(item => teamTwo === item.name) 
+    console.log(choice2)
+    logo2.src=choice2.logo;
+
+    document.querySelector('#teamImg').appendChild(logo2)
+
+
     
 
 }
