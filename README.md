@@ -94,14 +94,14 @@ https://whimsical.com/project1-9jmv2Ao3uZts6P5MbqnVaq
 ## Timeframes
 | component | Estimated duration | actual duration |
 |---------- |:----------: |:----------: |
-| Pseudocode | 3% |  3% |
-|HTML and js| 20% | 15% |
-|adding buttons/event listeners | 15% | 10% |
-|add/text | 7% | 7% |
-|flexbox | 15% | 12% |
-|styling css | 20% | 13% |
-|pulling correct data from api | 15% | 35% |
-|styling media queries | 5% | 5% |
+| Pseudocode | 2hr |  1hr |
+|HTML and js| 6hr | 5hr |
+|adding buttons/event listeners | 3hr | 1hr |
+|add/text | 1hr | 30min |
+|flexbox | 3hr | 2hr |
+|styling css | 3hr | 3hr |
+|pulling correct data from api | 2hr | 5hr |
+|styling media queries | 1hr | 30min |
 total 100%
 
 ## Code Snippet
