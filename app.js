@@ -84,44 +84,6 @@ const homeWinner = () => {
 }
 
 
-// const imgTeams = (imgData) => {
-//     if(teamOne === data[imgData].logo) {
-//     for(let i= 0; i < 292; i++) {
-
-//     const logo = document.createElement('img')
-//     logo.src=imgData.data[i].logo
-
-//     document.querySelector('.imgTeams').append(logo) 
-//     }
-// }  
-// } 
-
-
-
-
-
-
-
-
-
-
-
-// const teamImg = (images) => {
-//     const logo = document.createElement('img')
-//     logo.src=teamData.data[images].logo
-//     document.querySelector('#teams').append(logo) 
-//     return images;
-// }
-
-
-// const homeTeam = document.querySelector('.home');
-// let homeWin ;
-// homeTeam.addEventListener('click', () => {
-//     homeWin = homeWin + 1;
-    
-// })
-
-
 
 
 

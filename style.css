@@ -138,4 +138,10 @@ h2{
     #teamImg {
         display: none;
     }
+    #teams{
+        font-size: 14px;
+    }
+    #winContainer{
+        font-size: 14px;
+    }
 }
