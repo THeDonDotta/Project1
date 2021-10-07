@@ -53,7 +53,7 @@ const newTeam = (team) => {
 }
 ```
 
-- 2.part1
+- 2. part1
 ```
     .then((resJSON) => {
         console.log(resJSON);
@@ -64,7 +64,7 @@ const newTeam = (team) => {
         })
 ```
 
-- 2.part2
+- 2. part2
 ```
 if(matchTeams.length ===1){
     const logo = document.createElement('img')
