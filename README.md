@@ -19,14 +19,16 @@ https://whimsical.com/project1-9jmv2Ao3uZts6P5MbqnVaq
 -add media queries to help make design more responsive for mobile app
 
 ## Timeframes
-Pseudocode: estimated-3%  actual-3%
-HTML and js: estimated-20%  actual-15%
-adding buttons/event listeners: estimated-15% actual-10%
-add/text: estimated-7%  actual-7%
-flexbox: estimated-15%  actual-12%
-styling css: estimated-20% actual-13%
-pulling correct data from api: estimated-15%  actual-35%
-styling media queries: estimated-5% actual-5%
+| component | Estimated duration | actual duration |
+|---------- |:----------: |:----------: |
+| Pseudocode | 3% |  3% |
+|HTML and js| 20% | 15% |
+|adding buttons/event listeners | 15% | 10% |
+|add/text | 7% | 7% |
+|flexbox | 15% | 12% |
+|styling css | 20% | 13% |
+|pulling correct data from api | 15% | 35% |
+|styling media queries | 5% | 5% |
 total 100%
 
 ## Code Snippet
