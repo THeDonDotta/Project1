@@ -1,7 +1,7 @@
 const DOMAIN = 'http://app.sportsdataappi.com/';
 const API_KEY = '5233420936673633'
 
-
+let teamList = [];
 
 fetch("https://app.sportdataapi.com/api/v1/soccer/teams?apikey=a8db2bb0-22c5-11ec-9524-773a9f576272&country_id=42"
 )
@@ -11,8 +11,8 @@ fetch("https://app.sportdataapi.com/api/v1/soccer/teams?apikey=a8db2bb0-22c5-11e
     .then((resJSON) => {
         console.log(resJSON);
         showTeamData(resJSON);
-        const teamList = resJSON;
-        return teamList;
+        resJSON.data.forEach((team) => {teamList.push(team)})
+        
 
         })
         .catch((error) => {
@@ -68,8 +68,8 @@ const newTeam = (team) => {
 
     const logo = document.createElement('img')
     document.querySelector('#teamImg')
-    const choice =find((teamOne) => teamList) 
-    console.log(choice) 
+    const choice = teamList.find(item => teamOne === item.name) 
+    console.log(choice.logo) 
     
 
 }
