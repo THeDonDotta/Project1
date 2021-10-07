@@ -42,6 +42,7 @@ h2{
     color: white;
     background-color: black;
     border: 10px solid rgb(170, 59, 59);
+    font-family: monospace, monaco;
     max-width: 300px;
     margin: auto;
 }
@@ -60,6 +61,7 @@ h2{
     background-color: black;
     color:white; 
     border: 10px solid rgb(170, 59, 59);
+    
     max-width: 200px;
     margin: auto;
     
