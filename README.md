@@ -7,6 +7,79 @@ The website allows you to choose two different english soccer teams and allows y
 
 ## API and Data Sample
 http://app.sportsdataappi.com/
+```
+{
+query: {
+apikey: "a8db2bb0-22c5-11ec-9524-773a9f576272",
+country_id: "42"
+},
+data: [
+{
+team_id: 849,
+name: "Newcastle United",
+short_code: "NEW",
+common_name: "",
+logo: "https://cdn.sportdataapi.com/images/soccer/teams/100/17.png",
+country: {
+country_id: 42,
+name: "England",
+country_code: "en",
+continent: "Europe"
+}
+},
+{
+team_id: 850,
+name: "Wolverhampton Wanderers",
+short_code: "WOL",
+common_name: "",
+logo: "https://cdn.sportdataapi.com/images/soccer/teams/100/16.png",
+country: {
+country_id: 42,
+name: "England",
+country_code: "en",
+continent: "Europe"
+}
+},
+{
+team_id: 2509,
+name: "Liverpool FC",
+short_code: "LFC",
+common_name: "",
+logo: "https://cdn.sportdataapi.com/images/soccer/teams/100/1.png",
+country: {
+country_id: 42,
+name: "England",
+country_code: "en",
+continent: "Europe"
+}
+},
+{
+team_id: 2510,
+name: "Norwich City",
+short_code: "NOR",
+common_name: "",
+logo: "https://cdn.sportdataapi.com/images/soccer/teams/100/2.png",
+country: {
+country_id: 42,
+name: "England",
+country_code: "en",
+continent: "Europe"
+}
+},
+{
+team_id: 2511,
+name: "AFC Bournemouth",
+short_code: "BRN",
+common_name: "",
+logo: "https://cdn.sportdataapi.com/images/soccer/teams/100/5.png",
+country: {
+country_id: 42,
+name: "England",
+country_code: "en",
+continent: "Europe"
+}
+
+```
 
 ## Wireframes
 https://whimsical.com/project1-9jmv2Ao3uZts6P5MbqnVaq
