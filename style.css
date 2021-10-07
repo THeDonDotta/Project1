@@ -90,12 +90,16 @@ h2{
 }
 .form {
     margin: auto;
-    padding-left: 42%;
+    /* padding-left: 42%; */
+    text-align: center;
 }
 #result{
     padding-top: 30px;
     font-size : 40px;
     justify-content: center;
+}
+#select{
+    text-align: center;
 }
 
 .images{
