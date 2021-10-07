@@ -820,8 +820,17 @@ country_code: "en",
 continent: "Europe"
 }
             
-Wireframes
-This code allowed me to push the first two teams selected into an array which I then displayed as the two teams that would be up against each other.
+MVP
+Find and integrate soccer team api 
+Render team api data to the page inside of my dropdown
+Layout my information using html and js
+Style the page with flexbox tools and css
+add media queries to help make design more responsive for mobile app
+
+
+Timeframes
+The most time I spent was on the array of teams that would be up against each other which is the first code below. The next problem that took up time was getting the api information accessable to get the image. The code in number 2 allowed me to do that. 
+1.
 const newTeam = (team) => {
 
     let userSelect = document.getElementById('select').value;
@@ -838,8 +847,32 @@ const newTeam = (team) => {
     document.getElementById('teams').innerHTML = teamOne+ " vs " + teamTwo;
     return teamOne, teamTwo;
 }
+2.part1
+    .then((resJSON) => {
+        console.log(resJSON);
+        showTeamData(resJSON);
+        resJSON.data.forEach((team) => {teamList.push(team)})
+        
 
-Timeframes
+        })
+2.part2
+if(matchTeams.length ===1){
+    const logo = document.createElement('img')
+
+    const choice = teamList.find(item => teamOne === item.name) 
+    console.log(choice)
+    logo.src=choice.logo;
+    
+    document.querySelector('#teamImg').appendChild(logo)
+}
+    
+    const logo2 = document.createElement('img')
+    
+    const choice2 = teamList.find(item => teamTwo === item.name) 
+    console.log(choice2)
+    logo2.src=choice2.logo;
+
+    document.querySelector('#teamImg').appendChild(logo2)
 
 
 
