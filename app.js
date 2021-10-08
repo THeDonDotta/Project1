@@ -9,7 +9,7 @@ fetch("https://app.sportdataapi.com/api/v1/soccer/teams?apikey=a8db2bb0-22c5-11e
         return res.json();
     })
     .then((resJSON) => {
-        console.log(resJSON);
+        
         showTeamData(resJSON);
         resJSON.data.forEach((team) => {teamList.push(team)})
         
@@ -54,7 +54,7 @@ const newTeam = (team) => {
     const logo = document.createElement('img')
 
     const choice = teamList.find(item => teamOne === item.name) 
-    console.log(choice)
+    
     logo.src=choice.logo;
     
     document.querySelector('#teamImg').appendChild(logo)
